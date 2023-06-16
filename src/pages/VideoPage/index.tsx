@@ -63,9 +63,7 @@ const VideoPage = () => {
               left: zone.zone.left,
               top: zone.zone.top,
             }}
-          >
-            {zone.id}-{zone.timestamp}
-          </div>
+          />
         ))}
       </div>
 
@@ -78,7 +76,7 @@ const VideoPage = () => {
               key={time.id}
               onClick={() => onChangeTime(time.time)}
             >
-              {time.id}-{time.timestamp}
+              {time.timestamp}
             </li>
           ))}
         </ul>
