@@ -1,0 +1,26 @@
+.videoPage {
+  display: flex;
+  justify-content: space-around;
+
+  .videoPlayer {
+    position: relative;
+  }
+
+  .rectangle {
+    position: absolute;
+    background: green;
+  }
+
+  .timestamp {
+    cursor: pointer;
+    list-style-type: none;
+    user-select: none;
+    &:hover {
+      opacity: 0.5;
+      color: blue;
+    }
+    &:active {
+      opacity: 0.9;
+    }
+  }
+}
